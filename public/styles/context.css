@@ -1,0 +1,36 @@
+.contextmenu-node{
+    position: absolute;
+    background-color: #F5ECCE;
+    border: solid #CCCCCC 1px;
+}
+.contextmenu-item{
+    padding: 0.1em 1.0em 0.1em 1.0em;
+}
+.contextmenu-item:hover{
+    background-color: #CCCCCC;
+    cursor: default;
+}
+
+.ctxmbox {
+  float: left;
+  padding: 0.1em 0.5em 0.1em 0.5em;
+}
+.ctxborder {
+  border: solid #CCCCCC 1px;
+}
+.ctxmboxadjust {
+  margin-top: 5px;
+}
+.ctxmboxContainer {
+  overflow: hidden;
+  padding: 0.1em 0.5em 0.1em 0.5em;
+}
+/* clearfix */
+.ctxmboxContainer:before,
+.ctxmboxContainer:after {
+  content: "";
+  display: table;
+}
+.ctxmboxContainer:after {
+  clear: both;
+}
