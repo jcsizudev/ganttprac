@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
   var dir = fs.readdirSync(publicPath);
   var cts = '<div>';
   dir.filter(function (file) {
-    filePath = publicPath + '\\' + file;
+    filePath = path.join(publicPath, file);
     return fs.statSync(filePath).isFile() && /.*\.html$/.test(filePath);
   }).forEach(function (file) {
     console.log(file);
